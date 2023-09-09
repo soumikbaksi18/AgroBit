@@ -1,5 +1,6 @@
 // import creator from "../assets/creator.png";
 import { daysLeft } from "../../utils";
+import styles from "../../style";
 
 const ProjectCard = ({
   owner,
@@ -14,66 +15,69 @@ const ProjectCard = ({
   const remainingDays = daysLeft(deadline);
   return (
     <>
-      <div
-        className="card flex justify-between px-4 mb-10 md:mb-0"
-        onClick={handleClick}
-      >
-        <div className="flex justify-between">
-          <div className="flex ">
-            {/* <img src={creator} alt="" className="w-8" /> */}
-            <p className="flex text-sm items-center mx-2 poppin">
-              {/* {owner.slice(0, 6)}... */}
-              John Doe
-            </p>
+      <>
+        <div
+          className="card bg-slate-200 w-96 crowdcard mb-10 rounded-md"
+          onClick={handleClick}
+        >
+          <figure>
+            <img src={image} alt="fund" className="w-96 h-60 rounded-md " />
+          </figure>
+          <div className="card-body px-5">
+            <h2 className="card-title pt-2">
+              <div className="bg-lime-600 my-3 w-28 h-10 flex justify-center items-center rounded-md">
+                <h4 className={`m-3 text-white `}>Afforestation</h4>
+              </div>
+            </h2>
+
+            <div className="headingss">
+              <h3
+                className={`text-green-900 text-2xl font-semibold leading-7 text-left`}
+              >
+                {title}
+              </h3>
+              <p className=" text-[#222222] text-left h-16 overflow-hidden">
+                {description}
+              </p>
+            </div>
+
+            <div className="user flex mt-4">
+              <div className=" flex justify-start items-center">
+                <img
+                  src=""
+                  className="w-[75%] h-[75%] -mx-[3.5px] object-contain"
+                />
+              </div>
+              <p className="w-52 -ml-3 mt-1 overflow-hidden">
+                <span className="text-ellipsis text-green-900">{owner}</span>
+              </p>
+            </div>
+
+            <div className="flex justify-between  my-6">
+              <div className="">
+                <h4 className={`${styles.texts2} text-green-900  flex font-lg`}>
+                  {amountCollected}{" "}
+                  <span>
+                    <h4 className={`${styles.texts2} mx-1`}>ETH</h4>
+                  </span>{" "}
+                </h4>
+                <p className={`${styles.texts2} flex text-[#8F8F8F] font-lg`}>
+                  Raised of {target}{" "}
+                  <span>
+                    <h4 className="mx-1">ETH</h4>
+                  </span>
+                </p>
+              </div>
+              <div className="">
+                <h4 className={`${styles.texts2} font-lg`}>{remainingDays}</h4>
+                <p className={`${styles.texts3}  text-[#8F8F8F] font-lg`}>
+                  Days Left
+                </p>
+              </div>
+            </div>
           </div>
-
-          <div className="flex align-items-center">
-            <p className="flex text-sm items-center text-gray-500 poppin">
-              10 succesful projects
-            </p>
-          </div>
         </div>
-
-        <div>
-          <img src={image} className=" my-4 rounded-xl " />
-        </div>
-
-        <div>
-          <h1 className="text-sm text-gray-500 poppin">250 backers</h1>
-        </div>
-
-        <div className="mt-2">
-          <h1 className="poppin text-lg">{title}</h1>
-        </div>
-
-        <div className="flex justify-between mt-2">
-          <div className="flex flex-col">
-            <p className="flex text-sm items-center text-gray-500 poppin">
-              Goal
-            </p>
-            <h3 className="flex text-base items-center text-lime-400 poppin">
-              {target} ETH
-            </h3>
-          </div>
-
-          <div className="flex flex-col">
-            <p className="flex text-sm items-center text-gray-500 poppin">
-              Achieved
-            </p>
-            <h3 className="flex text-base items-center text-violet-400 poppin">
-              {amountCollected} ETH
-            </h3>
-          </div>
-        </div>
-
-        <div className="bg-white mt-4 p-3 rounded-lg hover:bg-opacity-90 transition ease-in cursor-pointer">
-          <div className="flex justify-center align-middle place-items-center">
-            <h1 className="text-base font-semibold text-black poppin cursor-pointer">
-              View Project
-            </h1>
-          </div>
-        </div>
-      </div>
+      </>
     </>
   );
 };
