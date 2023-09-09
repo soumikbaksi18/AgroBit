@@ -261,7 +261,7 @@ const SystemPage = () => {
   
           <div className="right-widget">
             <div className="right-widget-inner">
-              <div className="chart-container mr-20">
+              <div className="chart-container mr-10">
                 <ForecastGraph
                   chartLabels={chart.chartLabels}
                   chartData={chart.chartData}
