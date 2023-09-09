@@ -1,5 +1,7 @@
 import React, { Suspense, useState } from "react";
 import {CRSIcon} from '../assets/icons/Icons';
+<img src={LoaderGif}/>
+import LoaderGif from "../assets/images/loader.gif"
 import Button from '../components/Button';
 
 const CRS = () => {
@@ -68,12 +70,15 @@ const CRS = () => {
         setCropImg(localStorageCropImages[result.crop]);
       }
       setCrop(result.crop);
+      await wait(3500);
     } catch (error) {
       console.error("Error:", error);
     } finally {
       setLoading(false);
     }
   };
+
+  const wait = async (time = 3500) => new Promise((resolve) => setTimeout(resolve, time));
 
   console.log("crop", cropresult);
   console.log("cropImg", cropImg);
@@ -188,9 +193,9 @@ const CRS = () => {
             <Button loading={loading} type={"submit"} text={'Start Analysis'} />
           </form>
         </div>
-        <div className="white-box p-4">
+        <div className="white-box p-4 flex items-center justify-center">
           {loading ? (
-            <p>Loading...</p> // Display a loading message or spinner
+            <img src={LoaderGif} className="relative object-contain"/>
           ) : (
             <>
               <div className="grid grid-cols-2 gap-2 w-full h-full">
