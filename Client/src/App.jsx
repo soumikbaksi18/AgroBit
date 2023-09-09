@@ -5,27 +5,30 @@ import LandingPage from "./pages/LandingPage";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import SystemPage from "./pages/SystemPage";
+import AllCampaign from "./pages/AllCampaign";
+import CreateCampaign from "./pages/CreateCampaign";
+import CampaignPage from "./pages/CampaignPage";
 import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 import AuthLayout from "./components/Auth/AuthLayout";
 
 function App() {
   return (
     <>
-      <Routes> 
+      <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route 
+        <Route
           path="/register"
-          element={ 
+          element={
             <ProtectedRoute onLogin={false}>
-              <AuthLayout> 
+              <AuthLayout>
                 <RegisterPage />
               </AuthLayout>
             </ProtectedRoute>
           }
         />
-        <Route 
-          path="/login" 
-          element={ 
+        <Route
+          path="/login"
+          element={
             <ProtectedRoute onLogin={false}>
               <AuthLayout>
                 <LoginPage />
@@ -41,6 +44,9 @@ function App() {
             </ProtectedRoute>
           }
         />
+        <Route path="/all" element={<AllCampaign />} />
+        <Route path="/create-campaign" element={<CreateCampaign />} />
+        <Route path="/campaign-page/:id" element={<CampaignPage />} />
       </Routes>
     </>
   );
