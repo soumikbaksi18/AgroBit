@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import {UserIcon, LockIcon, EyeIcon} from "../assets/Icons/Icons"
+import {UserIcon, LockIcon, EyeIcon} from "../assets/Icons";
 import { useAuth } from "../context/AuthContext";
 import { toast } from "react-hot-toast";
 

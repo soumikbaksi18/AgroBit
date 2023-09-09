@@ -1,5 +1,5 @@
 import React, { Suspense, useState } from "react";
-import {CRSIcon} from '../assets/icons/Icons';
+import {CRSIcon} from '../assets/Icons';
 <img src={LoaderGif}/>
 import LoaderGif from "../assets/images/loader.gif"
 import Button from '../components/Button';
