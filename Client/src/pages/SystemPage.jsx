@@ -15,6 +15,9 @@ import ForecastTabs from "../wcomponents/ForecastTabs";
 import keys from "../secrets.json";
 import "../App.css";
 
+import CRS from "../components/CRS";
+import Footer from '../components/Footer';
+
 const SystemPage = () => {
     const cityInputRef = useRef();
 
@@ -335,6 +338,15 @@ const SystemPage = () => {
 
         {/* Outputs */}
         <div className="weather-chart">{content}</div>
+      </div>
+
+      {/* Crop-Recommendation System */}
+      <div className="Crop-recomsystem ">
+        <CRS/>
+      </div>
+
+      <div>
+       <Footer/>
       </div>
      
       
