@@ -7,9 +7,7 @@ module.exports = {
       hardhat: {},
       mumbai: {
         url: "https://polygon-mumbai.infura.io/v3/4458cf4d1689497b9a38b1d6bbf05e78",
-        accounts: [
-          `0xcba50d8326a1072398f6283ac81ef57c4a39a9980c6582628c1d8f6401decb52`,
-        ],
+        accounts: [`0x${process.env.PRIVATE_KEY}`],
       },
     },
     settings: {
