@@ -309,7 +309,7 @@ const SystemPage = () => {
               <div className="flex ">
                 <img src={locator} className="w-6 mr-2" />
                 <h2 className="flex items-center text-lg font-semibold">
-                  Locations
+                  Location
                 </h2>
               </div>
 
