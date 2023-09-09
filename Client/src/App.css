@@ -262,6 +262,12 @@
       transform: rotate(360deg);
     }
   }
+
+  .white-box{
+    background-color: #fff;
+    border-radius: 20px;
+  }
+  
   
   .input-div {
     @apply p-1 px-2 border-[2px] border-[#D1D5DB]  bg-transparent w-full inline-flex items-center rounded-[6px];
