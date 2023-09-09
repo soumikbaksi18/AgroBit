@@ -21,9 +21,6 @@ const Feature = () => {
         </div>
 
 
-
-
-
         </div>
 
         <div className='white-box  flex flex-col w-1/2 ml-5'>
