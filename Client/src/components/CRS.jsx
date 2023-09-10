@@ -1,8 +1,8 @@
 import React, { Suspense, useState } from "react";
-import {CRSIcon} from '../assets/Icons';
-<img src={LoaderGif}/>
-import LoaderGif from "../assets/images/loader.gif"
-import Button from '../components/Button';
+import { CRSIcon } from "../assets/Icons";
+<img src={LoaderGif} />;
+import LoaderGif from "../assets/images/loader.gif";
+import Button from "../components/Button";
 
 const CRS = () => {
   const [data, setData] = useState({
@@ -24,7 +24,7 @@ const CRS = () => {
     console.log(data);
 
     try {
-      const response = await fetch("https://huhu-ukg8.onrender.com/predict", {
+      const response = await fetch("  https://ml-9a3h.onrender.com/predict", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
@@ -78,7 +78,8 @@ const CRS = () => {
     }
   };
 
-  const wait = async (time = 3500) => new Promise((resolve) => setTimeout(resolve, time));
+  const wait = async (time = 3500) =>
+    new Promise((resolve) => setTimeout(resolve, time));
 
   console.log("crop", cropresult);
   console.log("cropImg", cropImg);
@@ -89,7 +90,7 @@ const CRS = () => {
         <div>
           <div className="space-y-1 text-left mb-4">
             <h2 className="font-kumbh text-2xl font-bold inline-flex">
-              <CRSIcon/> Crop Recommendation
+              <CRSIcon /> Crop Recommendation
             </h2>
             <p className="text-placeholder">
               Fill out your the following details about your land to recieve
@@ -190,12 +191,12 @@ const CRS = () => {
                 className="input-div px-3 py-2"
               />
             </div>
-            <Button loading={loading} type={"submit"} text={'Start Analysis'} />
+            <Button loading={loading} type={"submit"} text={"Start Analysis"} />
           </form>
         </div>
         <div className="white-box p-4 flex items-center justify-center">
           {loading ? (
-            <img src={LoaderGif} className="relative object-contain"/>
+            <img src={LoaderGif} className="relative object-contain" />
           ) : (
             <>
               <div className="grid grid-cols-2 gap-2 w-full h-full">
@@ -205,11 +206,11 @@ const CRS = () => {
                 <div></div>
                 {cropImg &&
                   cropImg.map((img) => (
-                      <img
-                        className="w-full rounded-lg aspect-square object-cover h-full"
-                        src={img}
-                        alt="crop"
-                      />
+                    <img
+                      className="w-full rounded-lg aspect-square object-cover h-full"
+                      src={img}
+                      alt="crop"
+                    />
                   ))}
               </div>
             </>
