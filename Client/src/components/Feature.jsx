@@ -10,7 +10,7 @@ const Feature = () => {
     <>
       <div className="mx-32" id="feat">
         {" "}
-        <h1 className="text-green-800 font-semibold text-5xl mt-36 mb-20">
+        <h1 className="text-green-800 font-semibold text-5xl mt-16 mb-20">
           How do we do it?
         </h1>
         <div className="flex justify-around items-center mx-20 ">
