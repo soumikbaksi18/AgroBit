@@ -17,7 +17,7 @@ const ProjectCard = ({
     <>
       <>
         <div
-          className="card bg-slate-200 w-96 crowdcard mb-10 rounded-md"
+          className="card bg-white w-96 crowdcard mb-10 rounded-md"
           onClick={handleClick}
         >
           <figure>
@@ -26,7 +26,7 @@ const ProjectCard = ({
           <div className="card-body px-5">
             <h2 className="card-title pt-2">
               <div className="bg-lime-600 my-3 w-28 h-10 flex justify-center items-center rounded-md">
-                <h4 className={`m-3 text-white `}>Afforestation</h4>
+                <h4 className={`m-3 text-white `}>AgroTech</h4>
               </div>
             </h2>
 
