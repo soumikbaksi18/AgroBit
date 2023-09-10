@@ -103,6 +103,7 @@ const CRS = () => {
                 Nitrogen
               </label>
               <input
+                placeholder="Enter ratio of Nitrogen content in soil"
                 type="text"
                 id="nitrogen"
                 name="nitrogen"
@@ -116,6 +117,7 @@ const CRS = () => {
                 Phosphorous
               </label>
               <input
+                placeholder="Enter ratio of Phosphorous content in soil "
                 type="text"
                 id="phosphorous"
                 name="phosphorous"
@@ -130,6 +132,7 @@ const CRS = () => {
               </label>
               <input
                 type="text"
+                placeholder="Enter ratio of Potassium content in soil "
                 id="potassium"
                 name="potassium"
                 value={data.k}
@@ -143,6 +146,8 @@ const CRS = () => {
               </label>
               <input
                 type="text"
+                placeholder="Enter temperature in degree Celsius
+                "
                 id="temperature"
                 name="temperature"
                 value={data.temperature}
@@ -157,6 +162,7 @@ const CRS = () => {
                 Humidity
               </label>
               <input
+                placeholder="Enter relative humidity in %"
                 type="text"
                 id="humidity"
                 name="humidity"
@@ -170,6 +176,7 @@ const CRS = () => {
                 Rainfall
               </label>
               <input
+                placeholder="Enter rainfall in mm"
                 type="text"
                 id="rainfall"
                 name="rainfall"
@@ -183,6 +190,7 @@ const CRS = () => {
                 pH Level
               </label>
               <input
+                placeholder="Enter ph value of the soil"
                 type="text"
                 id="phLevel"
                 name="phLevel"
