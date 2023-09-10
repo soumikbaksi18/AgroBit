@@ -240,7 +240,7 @@
     border: rgba(209, 213, 219, 1);
     border-width: 2px;
     border-style: double;
-    border-radius: 12px;
+    border-radius: 8px;
     padding: 10px; 
   }
   
@@ -263,10 +263,6 @@
     }
   }
 
-  .white-box{
-    background-color: #fff;
-    border-radius: 20px;
-  }
   
   
   .input-div {

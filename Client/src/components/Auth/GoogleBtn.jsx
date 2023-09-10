@@ -1,5 +1,5 @@
-import { GoogleIcon } from "../../assets/Icons/Icons"
-import { useAuth } from "../../context/AuthContext"
+import { GoogleIcon } from "../../assets/Icons";
+import { useAuth } from "../../context/AuthContext";
 
 function GoogleBtn() {
   const {googleAuth} = useAuth();

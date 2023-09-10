@@ -9,7 +9,7 @@ const ForecastGraph = (props) => {
     maintainAspectRatio: false,
     layout: {
       padding: {
-        
+         
       },
     },
     plugins: {

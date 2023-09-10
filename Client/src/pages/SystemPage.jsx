@@ -6,7 +6,7 @@ import Logo from "../components/Logo";
 import locator from "../assets/images/Location.svg";
 import calendar from "../assets/images/Calendar.svg";
 import cloudy from "../assets/images/cloudy.svg";
-
+import {FiLogOut} from 'react-icons/fi';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import CityForm from "../wcomponents/CityForm";
@@ -14,6 +14,9 @@ import ForecastGraph from "../wcomponents/ForecastGraph";
 import ForecastTabs from "../wcomponents/ForecastTabs";
 import keys from "../secrets.json";
 import "../App.css";
+
+import CRS from "../components/CRS";
+import Footer from '../components/Footer';
 
 const SystemPage = () => {
     const cityInputRef = useRef();
@@ -258,7 +261,7 @@ const SystemPage = () => {
   
           <div className="right-widget">
             <div className="right-widget-inner">
-              <div className="chart-container mr-20">
+              <div className="chart-container mr-10">
                 <ForecastGraph
                   chartLabels={chart.chartLabels}
                   chartData={chart.chartData}
@@ -286,8 +289,8 @@ const SystemPage = () => {
           <h2 className="flex items-center mr-2 font-semibold text-xl">
             Hello, {currentUser?.displayName ?? currentUser?.email}
           </h2>
-          <button onClick={logout} className="mx-2">
-            Logout
+          <button onClick={logout} className="mx-2" title="Logout">
+            <FiLogOut className="text-primary text-lg"/>
           </button>
           <img
             src={currentUser?.photoURL ?? profile}
@@ -335,6 +338,15 @@ const SystemPage = () => {
 
         {/* Outputs */}
         <div className="weather-chart">{content}</div>
+      </div>
+
+      {/* Crop-Recommendation System */}
+      <div className="Crop-recomsystem ">
+        <CRS/>
+      </div>
+
+      <div>
+       <Footer/>
       </div>
      
       
