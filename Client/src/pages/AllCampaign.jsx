@@ -37,7 +37,7 @@ const AllCampaign = () => {
       </div>
 
       {/* Projects Sections */}
-      <div className="projects px-40">
+      <div className="projects px-32">
         <h1 className=" text-3xl font-semibold text-left  mb-10 poppin">
           Featured Projects
         </h1>
