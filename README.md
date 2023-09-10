@@ -55,6 +55,7 @@ AgroBit is on a mission to revolutionize agriculture by providing farmers and ag
 ## Links
 * ### [Live Site](https://agro-bit.vercel.app)
 * ### [Full Walk-through](https://www.loom.com/share/958c240e39dc4499af91157745c6234a?sid=caa10ce0-b6ca-4bd6-a6ff-35fb33fe8385)
+* ### [Presentation](https://www.figma.com/proto/RXC17kUuGtVj3Ch9OO2NFg/Agralink?page-id=82%3A261&type=design&node-id=82-262&viewport=71%2C476%2C0.12&t=nlkz7qLgWzb2Xkw5-1&scaling=scale-down)
 
 ## Quine Repository
 https://quine.sh/repo/soumikbaksi18-AgroBit-689212627   
