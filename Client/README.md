@@ -15,7 +15,7 @@ Welcome to AgroBit, your go-to platform for agriculture recommendations and crow
 - [For Developers](#getting-started)
 - [Acknowledgements](#acknowledgements)
 
-## Introduction
+    ## Introduction
 AgroBit is on a mission to revolutionize agriculture by providing farmers and agro-entrepreneurs with ```data-driven crop recommendations``` and a ```powerful crowdfunding marketplace```. We believe in empowering agricultural communities and boosting agro-innovation.
 
 ## Features
@@ -34,9 +34,7 @@ AgroBit is on a mission to revolutionize agriculture by providing farmers and ag
     - **`Seamless user experience`** for both farmers or relavant orgamizations and investors.
 
 ## How It Works
-* ### User Flow
-
-<img width="2640" alt="Readme-orbshift (1)" src="https://github.com/karar189/OrbShift/assets/52580094/0373f9c3-ad0b-4808-a4e2-76f0da830ff7">
+![TechStack](/Client//src/assets/images/Product%20Diagram.png)
 
 
 ## Technology Stack
@@ -46,22 +44,28 @@ AgroBit is on a mission to revolutionize agriculture by providing farmers and ag
 [![Unsplash API](https://img.shields.io/badge/-Unsplash_API-000000?style=for-the-badge&logo=unsplash&logoColor=white)](https://unsplash.com/developers)
 [![OpenWeather API](https://img.shields.io/badge/-OpenWeather_API-FF7F50?style=for-the-badge&logo=openweathermap&logoColor=white)](https://openweathermap.org/api)
 [![Python](https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 [![Matplotlib](https://img.shields.io/badge/-Matplotlib-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://matplotlib.org/)
 [![ThirdWeb](https://img.shields.io/badge/-ThirdWeb-0066CC?style=for-the-badge&logo=thirdweb&logoColor=white)](https://thirdweb.io/)
 [![MetaMask](https://img.shields.io/badge/-MetaMask-F366B9?style=for-the-badge&logo=metamask&logoColor=white)](https://metamask.io/)
 [![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com/)
+![Replit](https://img.shields.io/badge/Replit-667881?style=for-the-badge&logo=replit&logoColor=white)
 
 ## Links
 * ### [Live Site](https://agro-bit.vercel.app)
 * ### [Full Walk-through](https://www.loom.com/share/f37ecec2d5984a268b646c3e57c75828?sid=0b7dede3-ce01-43b6-8046-6649437d5fe5)
 
-## Flow Playground
-
-https://play.flow.com/9a6ea10a-54f8-4490-8ec8-eeae3da173d8?type=tx&id=8347a098-042d-488f-9ccd-972aa2d433ce
+## Quine Repository
+https://quine.sh/repo/soumikbaksi18-AgroBit-689212627   
+## Crop Recommendation System Backend - Replit
+https://replit.com/@SwetaKarar/fast2
 
 ## Future Scope
 
-![Marketplace](https://github.com/karar189/OrbShift/assets/52580094/8b6e28e5-f8cc-4ef9-9dd9-62187295adbe)
+1. **Crop recommendation System**: Integration of IOT devices to check , exact values of the soil for inputs required    for the CRS system, in real time.
+
+2. **Crowdfunding System**: Growing a community to support Crowdfunding for Agro projects using community Support, Investments, etc.
 
 ## Meet the Team
 - Sweta Karar [https://github.com/karar189]
