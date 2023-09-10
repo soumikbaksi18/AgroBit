@@ -15,7 +15,7 @@ Welcome to AgroBit, your go-to platform for agriculture recommendations and crow
 - [For Developers](#getting-started)
 - [Acknowledgements](#acknowledgements)
 
-    ## Introduction
+## Introduction
 AgroBit is on a mission to revolutionize agriculture by providing farmers and agro-entrepreneurs with **data-driven crop recommendations** and a **powerful crowdfunding marketplace**. We believe in empowering agricultural communities and boosting agro-innovation.
 
 ## Features
