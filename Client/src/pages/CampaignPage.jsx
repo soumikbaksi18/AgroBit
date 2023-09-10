@@ -6,6 +6,9 @@ import CustomButton from "../components/CrowdFund/CustomButton";
 import CountBox from "../components/CrowdFund/CountBox";
 import { calculateBarPercentage, daysLeft } from "../utils";
 import Header from "../components/Header";
+import man from "../assets/manush.png";
+import bag from "../assets/bag.png";
+import cal from "../assets/cal.png";
 
 const CampaignPage = () => {
   const { state } = useLocation();
@@ -16,7 +19,7 @@ const CampaignPage = () => {
   const [amount, setAmount] = useState("");
   const [donators, setDonators] = useState([]);
 
-  // const remainingDays = daysLeft(state.deadline);
+  const remainingDays = daysLeft(state.deadline);
 
   const fetchDonators = async () => {
     const data = await getDonations(state.pId);
@@ -65,12 +68,12 @@ const CampaignPage = () => {
 
           <div className="flex md:w-[150px] w-full flex-wrap justify-between gap-[30px] ml-8">
             <div className="">
-              <img src="" alt="" className="" />
-              <CountBox title="Days Left" />
+              <img src={cal} alt="" className="" />
+              <CountBox title="Days Left" value={`${remainingDays}`} />
             </div>
 
             <div className="">
-              <img src="" alt="" className="" />
+              <img src={bag} alt="" className="" />
               <CountBox
                 title={`Raised of ${state.target}`}
                 value={state.amountCollected}
@@ -78,7 +81,7 @@ const CampaignPage = () => {
             </div>
 
             <div>
-              <img src="" alt="" className="" />
+              <img src={man} alt="" className="" />
               <CountBox title="Total Backers" value={donators.length} />
             </div>
           </div>
@@ -94,7 +97,7 @@ const CampaignPage = () => {
               <div className="mt-[20px] flex flex-row items-center flex-wrap gap-[14px]">
                 <div className="w-[52px] h-[52px] flex items-center justify-center rounded-full  cursor-pointer">
                   <img
-                    // src={user}
+                    src={man}
                     alt="user"
                     className="w-[60%] h-[60%] object-contain"
                   />
