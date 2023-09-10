@@ -82,7 +82,7 @@ https://replit.com/@SwetaKarar/fast2
  npm install
  npm run dev
 ```
-
+### Connect Metabask for Crowdfunding : https://youtu.be/Af_lQ1zUnoM?si=WTg_vVJumndqRLBp
 ---
 
 **Join us in transforming agriculture with AgroBit!**
