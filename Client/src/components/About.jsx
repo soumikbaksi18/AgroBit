@@ -10,13 +10,12 @@ const About = () => {
 
           <div className="mb-4">
             <h1 className="text-green-800 font-semibold my-6 text-3xl">
-              Visit Our Marketplace
+              Agro-Innovation Funding
             </h1>
             <p className="text-lg font-semibold mx-6">
-              Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              vulputate libero et velit interdum, ac aliquet odio mattis. Class
-              aptent taciti sociosqu ad litora torquent per conubia nostra, per
-              inceptos himenaeos.
+              Invest in the growth of agro-tech. Our crowdfunding marketplace
+              connects visionaries like you with groundbreaking projects,
+              creating a thriving ecosystem for agro-innovation.
             </p>
           </div>
 

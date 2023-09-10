@@ -19,13 +19,12 @@ const Feature = () => {
 
             <div className="mb-4">
               <h1 className="text-green-800 font-semibold my-10 text-3xl">
-                Crop Recommendation System
+                Smart Crop Recommendation System
               </h1>
               <p className="text-lg font-semibold mx-10">
-                Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.
-                Class aptent taciti sociosqu ad litora torquent per conubia
-                nostra, per inceptos himenaeos.
+                Sow the seeds of success with data-driven insights. Our
+                recommendation system helps you harvest the best crops, ensuring
+                bountiful yields and prosperity.
               </p>
             </div>
           </div>
@@ -38,10 +37,10 @@ const Feature = () => {
                 Weather Report System
               </h1>
               <p className="text-lg font-semibold mx-10 ">
-                Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.
-                Class aptent taciti sociosqu ad litora torquent per conubia
-                nostra, per inceptos himenaeos.
+                One of the key factors in successful agriculture is staying
+                informed about weather conditions. At AgroBit, we provide you
+                with real-time weather reports that are crucial for making
+                informed decisions about your farming activities.
               </p>
             </div>
           </div>

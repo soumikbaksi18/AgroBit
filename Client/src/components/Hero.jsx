@@ -10,9 +10,10 @@ const Hero = () => {
           We empower agriculture by helping you <br /> make smarter choices
         </div>
 
-        <p className="mt-4 text-center text-zinc-600 text-lg font-semibold leading-[27px]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-          vulputate libero et velit interdum, ac aliquet odio mattis.
+        <p className="mt-4 text-center px-24 text-zinc-600 text-lg font-semibold leading-[27px]">
+          We plow the fields of innovation, planting the seeds of progress in
+          agriculture. Our mission is to empower you with knowledge and funding
+          for a greener, smarter, and more sustainable future
         </p>
       </div>
 
